@@ -1,0 +1,433 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		accent-color: rgb(255 0 0);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		accent-color: rgb(0 255 0);
+	}
+}
+
+@font-face {
+    font-family: 'Rocher';
+    src: url(/fonts/RocherColorGX.woff2);
+}
+
+body {
+    background-color: #fdf6d9;
+}
+
+header > h1 {
+    font-family: 'Rocher', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+main {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+main section {
+    background-color: rgba(0 0 0 / 0.1);
+    width: 900px;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+section header {
+    margin-bottom: 1em;
+}
+
+/* Kleuren met spaties i.p.v. comma's */
+section:nth-child(2) article {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+section:nth-child(2) article ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+section:nth-child(2) article ul li {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+section:nth-child(2) ul li:nth-child(1){
+    padding: 0;
+    font-weight: bold;
+}
+section:nth-child(2) ul li:nth-child(2){
+    background-color: rgb(0 128 255);
+}
+section:nth-child(2) ul li:nth-child(3){
+    background-color: rgb(0 128 255 / 50%);
+}
+section:nth-child(2) ul li:nth-child(4){
+    background-color: hsl(198 28% 50%);
+}
+section:nth-child(2) ul li:nth-child(5){
+    background-color: hsl(198deg 28% 50% / 50%);
+}
+
+/* Moderne CSS colors */
+section:nth-child(3) article {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+section:nth-child(3) article ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+section:nth-child(3) article ul li {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+section:nth-child(3) ul li:nth-child(1){
+    background: linear-gradient(
+		to right,
+		hsl(188 100% 34%),
+		hsl(331 100% 50%)
+	);
+}
+section:nth-child(3) ul li:nth-child(2){
+    background: linear-gradient(
+		to right,
+		lch(50% 100 200),
+		lch(50% 100 0)
+	);
+}
+
+/* Display-P3 */
+section:nth-child(4) article {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+section:nth-child(4) article ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+section:nth-child(4) article ul li {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+section:nth-child(4) article ul li div {
+    width:150px;
+    height:150px;
+    background-color:black;
+    border-radius:10px;
+}
+
+section:nth-child(4) ul li:nth-child(1){
+    background-color: rgb(255, 0, 0);
+}
+section:nth-child(4) ul li:nth-child(1) div{
+    background-color: color(display-p3 1 0 0 / 1);
+}
+section:nth-child(4) ul li:nth-child(2){
+    background-color: rgb(0, 255, 0);
+}
+section:nth-child(4) ul li:nth-child(2) div{
+    background-color: color(display-p3 0 1 0 / 1);
+}
+section:nth-child(4) ul li:nth-child(3){
+    background-color: rgb(0, 255, 209);
+}
+section:nth-child(4) ul li:nth-child(3) div{
+    background-color: color(display-p3 0 1 0.70 / 1);
+}
+
+/* Gradients */
+section:nth-child(5) article {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+section:nth-child(5) article p {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    border-radius:10px;
+}
+
+section:nth-child(5) article p:nth-of-type(1){
+    background-image: conic-gradient(aqua, fuchsia, salmon, aqua);  
+}
+section:nth-child(5) article p:nth-of-type(2){
+    background: linear-gradient(-90deg, lightblue, orange); 
+}
+section:nth-child(5) article p:nth-of-type(3){
+    background: radial-gradient(#e66465, #9198e5);
+}
+section:nth-child(5) article p:nth-of-type(4){
+    background: repeating-linear-gradient(45deg, lightgreen, #ebf8e1 15%, white 20%);
+}
+
+/* Leah's gallery */
+section:nth-child(6) article {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+section:nth-child(6) article p {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    border-radius:10px;
+}
+
+section:nth-child(6) article p:nth-of-type(1){
+    background:
+    radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+    radial-gradient(at 100% 100%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px), #8a3;
+    background-size: 20px 20px; 
+}
+
+section:nth-child(6) article p:nth-of-type(2){
+    background-color: #eee;
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+    linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+}
+
+section:nth-child(6) article p:nth-of-type(3){
+    background-color: hsl(34, 53%, 82%);
+    background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+      hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+      hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+      hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+      hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+      hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px
+      ),
+    repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+      hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+      hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+      hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+      hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+      hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px
+    );
+}
+
+section:nth-child(6) article p:nth-of-type(4){
+    background:
+    linear-gradient(45deg, #92baac 45px, transparent 45px)64px 64px,
+    linear-gradient(45deg, #92baac 45px, transparent 45px,transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),
+    linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);
+    background-color:#e1ebbd;
+    background-size: 128px 128px;
+}
+
+/* Blend mode */
+section:nth-child(7) article {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+section:nth-child(7) article p {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    border-radius:10px;
+}
+
+section:nth-child(7) article p:nth-of-type(1){
+    background-color: #eee;
+    background-image: linear-gradient(45deg, purple 25%, transparent 25%, transparent 75%, purple 75%, purple),
+    linear-gradient(45deg, purple 25%, transparent 25%, transparent 75%, purple 75%, purple);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+}
+section:nth-child(7) article p:nth-of-type(2){
+    background-color: #eee;
+    background-image: linear-gradient(45deg, purple 25%, transparent 25%, transparent 75%, purple 75%, purple),
+    linear-gradient(45deg, purple 25%, transparent 25%, transparent 75%, purple 75%, purple),
+    linear-gradient(green, red);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    color:white;
+    background-blend-mode: luminosity;
+}
+section:nth-child(7) article p:nth-of-type(3){
+    background-image: url("https://assets.codepen.io/274456/img-clown-fish.png");
+    background-size:contain;
+}
+section:nth-child(7) article p:nth-of-type(4){
+    background-image: url("https://assets.codepen.io/274456/img-clown-fish.png");
+    background-size:contain;
+    color:white;
+    text-align:center;
+    background-color: grey;
+    background-blend-mode: difference;
+}
+
+/* Blend mode chainen */
+section:nth-child(8) article {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+section:nth-child(8) article p {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    border-radius:10px;
+}
+
+section:nth-child(8) article p:nth-of-type(1){
+    background-image:
+      url('https://ununsplash.imgix.net/photo-1425136738262-212551713a58?fit=crop&fm=jpg&h=600&q=75&w=1050');
+    background-size:cover;
+}
+section:nth-child(8) article p:nth-of-type(2){
+    background-image:
+      url("https://download.unsplash.com/photo-1420708392410-3c593b80d416");
+    background-size:cover;
+}
+section:nth-child(8) article p:nth-of-type(3){
+    background-size:cover, cover, cover;
+    background-repeat:no-repeat;
+    background-image:
+        url('https://ununsplash.imgix.net/photo-1425136738262-212551713a58?fit=crop&fm=jpg&h=600&q=75&w=1050'), 
+        url( "https://download.unsplash.com/photo-1420708392410-3c593b80d416"),
+        linear-gradient(#999, pink);
+    background-blend-mode:soft-light, darken;
+}
+
+/* CSS filters */
+section:nth-child(9) article {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+section:nth-child(9) article p {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    border-radius:10px;
+}
+
+section:nth-child(9) article p:nth-of-type(1){
+    background-size:cover;
+    background-image: url('https://ununsplash.imgix.net/photo-1425136738262-212551713a58?fit=crop&fm=jpg&h=600&q=75&w=1050');
+}
+section:nth-child(9) article p:nth-of-type(2){
+    background-size:cover;
+    background-image: url('https://ununsplash.imgix.net/photo-1425136738262-212551713a58?fit=crop&fm=jpg&h=600&q=75&w=1050');
+    filter: blur(3px);
+    filter: grayscale(1);
+    filter: saturate(2.2);
+    filter: contrast(2);
+}
+
+/* Font palettes */
+section:nth-child(11) > article p {
+    font-family: 'Rocher';
+	font-size: 75px;
+	margin: 0;
+	padding: 0;
+    border-radius:10px;
+}
+
+section:nth-child(11) > article p:nth-child(2) {
+	font-palette: --Roze;
+}
+
+section:nth-child(11) > article p:nth-child(3) {
+	font-palette: --Groen;
+}
+
+section:nth-child(11) > article p:nth-child(4) {
+	font-palette: --Blauw;
+}
+
+@font-palette-values --Roze {
+  font-family: Rocher;
+  base-palette: 1;
+}
+
+@font-palette-values --Groen {
+  font-family: Rocher;
+  base-palette: 2;
+}
+
+@font-palette-values --Blauw {
+  font-family: Rocher;
+  base-palette: 4;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #221c2a;
+    }
+
+    main section {
+        background-color: rgba(255 255 255 / 0.1);
+    }
+}
