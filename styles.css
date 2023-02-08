@@ -22,7 +22,7 @@
 
 @font-face {
     font-family: 'Rocher';
-    src: url(/fonts/RocherColorGX.woff2);
+    src: url(./fonts/RocherColorGX.woff2);
 }
 
 body {
