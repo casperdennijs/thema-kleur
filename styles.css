@@ -361,6 +361,7 @@ section:nth-child(9) article {
     display: flex;
     flex-direction: row;
     gap: 1em;
+    margin-bottom: 2em;
 }
 
 section:nth-child(9) article p {
