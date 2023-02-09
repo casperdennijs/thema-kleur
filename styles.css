@@ -27,6 +27,7 @@
 
 body {
     background-color: #fdf6d9;
+    transition: 1s;
 }
 
 header > h1 {
